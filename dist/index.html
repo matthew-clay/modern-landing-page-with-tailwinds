@@ -11,7 +11,8 @@
 	<link href="#" rel="shortcut icon" type="image/x-icon">
 	<title>Bookmark Landing Page</title>
 </head>
-<body class="font-poppins">
+<body class="font-poppins lg:overflow-x-hidden">
+
 <!--Header-->
 <header>
 	<nav class="container flex items-center py-4 mt-4 sm:mt-12">
@@ -140,5 +141,143 @@
 			class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-72 w-2/4 -bottom-6 -left-36 "></div>
 	</div>
 </section>
+
+<!--Download link section-->
+<section class="py-20 mt-20">
+	<!--heading-->
+	<div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+		<h1 class="text-3xl text-center text-bookmark-blue">Download the extension</h1>
+		<p class="text-center text-bookmark-grey mt-4">
+			We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to
+			prioritize.
+		</p>
+	</div>
+	<!-- Cards -->
+	<div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+		<!-- card #1 -->
+		<div class="flex flex-col rounded-md shadow-md lg:mb-16">
+			<div class="p-6 flex flex-col items-center">
+				<img alt="" src="images/logo-chrome.svg"/>
+				<h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
+				<p class="mb-2 text-bookmark-grey font-light">Minimum version 18.04+</p>
+			</div>
+			<hr class="border-b border-bookmark-white"/>
+			<div class="flex p-6">
+				<button class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black" type="button">
+					Install Extension
+				</button>
+			</div>
+		</div>
+
+		<!-- card #2 -->
+		<div class="flex flex-col rounded-md shadow-md lg:my-8">
+			<div class="p-6 flex flex-col items-center">
+				<img alt="" src="images/logo-firefox.svg"/>
+				<h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Firefox</h3>
+				<p class="mb-2 text-bookmark-grey font-light">Minimum version 15.2+</p>
+			</div>
+			<hr class="border-b border-bookmark-white"/>
+			<div class="flex p-6">
+				<button class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black" type="button">
+					Install Extension
+				</button>
+			</div>
+		</div>
+
+		<!-- card #3 -->
+		<div class="flex flex-col rounded-md shadow-md lg:mt-16">
+			<div class="p-6 flex flex-col items-center">
+				<img alt="" src="images/logo-opera.svg"/>
+				<h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Opera</h3>
+				<p class="mb-2 text-bookmark-grey font-light">Minimum version 10+</p>
+			</div>
+			<hr class="border-b border-bookmark-white"/>
+			<div class="flex p-6">
+				<button class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black" type="button">
+					Install Extension
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--FAQ-->
+<section class="bg-bookmark-white py-20">
+	<div class="container">
+		<!--heading-->
+		<div class="sm:w-3/4 mx-auto px-2">
+			<h1 class="text-3xl text-center text-bookmark-blue">Frequently Asked Questions</h1>
+			<p class="text-center text-bookmark-grey mt-4">
+				Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
+			</p>
+		</div>
+
+		<!--FAQ Accordion Items-->
+		<div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
+			<div class="flex items-center border-b py-4">
+				<span class="flex-1">What is a Bookmark?</span>
+				<i class="text-bookmark-purple fas fa-chevron-down"></i>
+			</div>
+
+			<div class="flex items-center border-b py-4">
+				<span class="flex-1">What is a Bookmark?</span>
+				<i class="text-bookmark-purple fas fa-chevron-down"></i>
+			</div>
+
+			<div class="flex items-center border-b py-4">
+				<span class="flex-1">How can I request a new browser?</span>
+				<i class="text-bookmark-purple fas fa-chevron-down"></i>
+			</div>
+
+			<div class="flex items-center border-b py-4">
+				<span class="flex-1">Is there a mobile app?</span>
+				<i class="text-bookmark-purple fas fa-chevron-down"></i>
+			</div>
+
+			<div class="flex items-center border-b py-4">
+				<span class="flex-1">What about other Chromium browsers?</span>
+				<i class="text-bookmark-purple fas fa-chevron-down"></i>
+			</div>
+			<button class="mt-12 flex self-center btn btn-purple hover:bg-bookmark-white hover:text-black" type="button">
+				More Info
+			</button>
+		</div>
+	</div>
+</section>
+
+<!--Contact Us-->
+<section class="bg-bookmark-purple text-white py-20">
+	<div class="container">
+		<div class="sm:w-3/4 mx-auto">
+			<p class="font-light uppercase text-center mb-8">35,000+ already joined.</p>
+			<h1 class="text-3xl text-center">Stay up-to-date with what we're doing.</h1>
+
+			<div class="flex flex-col sm:flex-row gap-6 mt-8">
+				<input class="flex-1 px-2 py-3 rounded-md focus:outline-none text-black"
+				       placeholder="Enter your email address..."
+				       type="email">
+				<button class="btn bg-bookmark-red hover:bg-bookmark-white hover:text-black" type="button">Contact Us</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Footer-->
+<footer class="bg-bookmark-purple py-8">
+	<div class="container flex-flex-col md:flex-row items-center">
+		<div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+			<img alt="logo-bookmark" src="images/logo-bookmark-white.png">
+			<ul class="flex text-white uppercase gap-12 text-xs">
+				<li class="cursor-pointer">Features</li>
+				<li class="cursor-pointer">Pricing</li>
+				<li class="cursor-pointer">Contact</li>
+			</ul>
+		</div>
+		<div class="flex gap-10 md:mt-0">
+			<span><i class="text-white text-2xl fab fa-twitter"></i></span>
+			<span><i class="text-white text-2xl fab fa-facebook-square"></i></span>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
